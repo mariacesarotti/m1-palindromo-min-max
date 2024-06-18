@@ -11,7 +11,7 @@ function isPalindrome(frase){
   }
   console.log(consoleImpressao);
   
-  if(consoleImpressao == fraseRecebida){
+  if(consoleImpressao === fraseRecebida){
     return true;
   }else{
     return false;
