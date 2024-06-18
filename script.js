@@ -19,7 +19,6 @@ function isPalindrome(frase){
 
 }
 
-console.log(isPalindrome("amadeu"));
 
 
 
