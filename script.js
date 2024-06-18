@@ -1,15 +1,12 @@
 function isPalindrome(frase){
   let fraseRecebida = frase;
   let tamanhoFrase = fraseRecebida.length;
-  let indiceInversao = tamanhoFrase;
   let consoleImpressao = fraseRecebida.charAt(tamanhoFrase-1);
 
-  for(let i = 0; i < tamanhoFrase; i++){
-    let letraAoContrario = fraseRecebida.charAt(indiceInversao - 2);
+  for(let i = tamanhoFrase - 2; i >= 0; i--){
+    let letraAoContrario = fraseRecebida.charAt(i);
     consoleImpressao += letraAoContrario;
-    indiceInversao -= 1;
   }
-  console.log(consoleImpressao);
   
   if(consoleImpressao === fraseRecebida){
     return true;
@@ -23,5 +20,4 @@ function isPalindrome(frase){
 
 
 function arrayMaxMin(arr){
-    /* Seu código aqui */
 }
