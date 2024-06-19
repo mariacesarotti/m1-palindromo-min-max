@@ -8,7 +8,7 @@ function isPalindrome(frase){
     consoleImpressao += letraAoContrario;
   }
   
-  if(consoleImpressao === fraseRecebida){
+  if(consoleImpressao == fraseRecebida){
     return true;
   }else{
     return false;
@@ -20,4 +20,16 @@ function isPalindrome(frase){
 
 
 function arrayMaxMin(arr){
+    let arrayRecebida = arr;
+    let arrayTamanho = arrayRecebida.length;
+    let numeroMaior = arrayRecebida[0];
+    let numeroMenor = arrayRecebida[1];
+    let arrayResultado = numeroMenor + "" + numeroMaior;
+
+    for(let i = 0; i > arrayTamanho - 1; i++){
+        if(numeroMaior > numeroMenor){
+          numeroMenor = arrayRecebida[arrayTamanho - i]; 
+        }
+    }
+    return arrayResultado;
 }
