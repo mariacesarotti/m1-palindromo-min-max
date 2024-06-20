@@ -17,23 +17,44 @@ function isPalindrome(frase){
 }
 
 
-
 function arrayMaxMin(arr){
-  const arrayRecebida = arr;
-  let tamanhoArray = arrayRecebida.length;
-  let arrayMin = arrayRecebida[0];
-  let arrayMax = arrayRecebida[1];
+  let minhaArray = arr;
+  let tamanhoArray = arr.length;
+  let numeroMaior = -Infinity;
+  let numeroMenor = Infinity;
 
-  for(let i = tamanhoArray - 1; i < 0; i--){
-    if(arrayMin > arrayMax){
-      arrayMax = arr[i];
-    }else{
-      arrayMin[i];
+
+  while(tamanhoArray--){
+    if(minhaArray[tamanhoArray] > numeroMaior){
+      numeroMaior = minhaArray[tamanhoArray];
+    }
+    if(minhaArray[tamanhoArray] < numeroMenor){
+      numeroMenor = minhaArray[tamanhoArray];
     }
   }
-  let consoleLogImpressao = arrayMax + "," + arrayMin;
-  return consoleLogImpressao;
+  return `${numeroMenor}, ${numeroMaior}`;
 }
+
+
+
+// function arrayMaxMin(arr){
+//   const arrayRecebida = arr;
+//   let tamanhoArray = arrayRecebida.length;
+//   let arrayMin = arrayRecebida[0];
+//   let arrayMax = arrayRecebida[1];
+//   let arrayTeste = arrayRecebida[2];
+
+//   for(let i = tamanhoArray - 3; i < 0; i--){
+//     if(arrayMax > arrayMin || arrayMax > arrayTeste){
+//       arrayMin = arrayRecebida[i]; 
+//     }else if(array){
+      
+//     }
+//   }
+//   let consoleLogImpressao = arrayMax + "," + arrayMin;
+//   return consoleLogImpressao
+// }
+
 
 
 
